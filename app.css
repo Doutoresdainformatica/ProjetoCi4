@@ -1,0 +1,86 @@
+/* app css */
+:root{
+
+    --top-bar-bg-color: #880000;
+    --top-bar-fg-color: #fff;
+
+    --menu-bg-color: #330000;
+    --menu-fg-color: #fff;
+
+    --menu-group-fg-color: #ffae00;
+
+    --content-bg-color: #ddd;
+    --content-fg-color: #000000;
+
+    --footer-gb-color: #000000;
+    --fotor-fg-color: #bbb;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+}
+*{
+font-family: 'Rajdhani', sans-serif;
+}
+
+.top-bar {
+    background: var(--top-bar-bg-color);
+    color: var(--top-bar-fg-color);
+    padding: 10px;
+}
+
+.top-bar a{
+    color: var(--menu-group-fg-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.top-bar a:hover {
+    color: var(--color-white);
+}
+
+/* Menu button */
+.btn-main-menu {
+    /* display: none; */
+    color: var(--color-white);
+    background: var(--menu-bg-color);
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-main-menu:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+/* main menu */
+.main-menu {
+    background: var(--menu-bg-color);
+    color: var(--color-white);
+    min-height: 100vh;
+    min-width: 250px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.main-menu a{
+    color: var(--menu-fg-color);
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    transition: background 0.2s ease;
+}
+
+.main-menu a:hover{
+    background: var(--top-bar-bg-color);
+}
+
+.menu-group {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 0px 10px;
+    color: var(--menu-group-fg-color);
+}
